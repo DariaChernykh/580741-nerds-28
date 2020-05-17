@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Pavel Kan](https://up.htmlacademy.ru/htmlcss/28/user/580741).
-* Наставник: [Дарья Черных](https://up.htmlacademy.ru/htmlcss/28/user/186126).
+* Наставник: [Daria Chernykh](https://up.htmlacademy.ru/htmlcss/28/user/186126).
 
 ---
 
