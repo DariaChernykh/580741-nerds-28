@@ -9,7 +9,7 @@
         <header>
             <nav>
                 <a href="index.html">
-                <img src="img/nerds-logo.svg" alt="Company's Logo" width="160" height="65">
+                <img src="img/nerds-logo.svg" alt="Логотип дизайн-студии «Нёрдс»" width="160" height="65">
                 </a>
                 <ul>
                     <li><a href="index.html">Студия</a></li>
@@ -27,132 +27,156 @@
             <section>
                 <div>
                     <p>Стоимость:</p>
-                    <!-- Здесь будет форма ползунка фильтра по цене???????-->
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar" style=""></div>
+                        </div>
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                    </div>
                     <span>От</span>
-                    <!-- Здесь будет поле для ввода цифр????-->
+                    <!-- Здесь будет поле для ввода цифр-->
                     <span>До</span>
-                    <!-- Здесь будет поле для ввода цифр????-->
+                    <!-- Здесь будет поле для ввода цифр-->
                 </div>
                 
                 <div>
-                    Сортировать:
-                    <span><a href="<!-- Я бы тут формой фильтр сделал, но не уверен-->">По цене</a></span>
-                    <span><a href="<!-- Я бы тут формой фильтр сделал, но не уверен-->">По типу</a></span>
-                    <span><a href="<!-- Я бы тут формой фильтр сделал, но не уверен-->">По названию</a></span>
-                    <span><a href="<!-- Я бы тут формой фильтр сделал, но не уверен-->"><img src="https://via.placeholder.com/150x100" alt="Фильтр по убыванию" width="20" height="20"></a></span>
-                    <span><a href="<!-- Я бы тут формой фильтр сделал, но не уверен-->"><img src="https://via.placeholder.com/150x100" alt="Фильтр по возрастанию" width="20" height="20"></a></span>
+                    <p>СЕТКА:</p>
+                    <p><input name="grid_type" type="radio" value="adaptive" checked>Адаптивная</p>
+                    <p><input name="grid_type" type="radio" value="fixed">Фиксированная</p>
+                    <p><input name="grid_type" type="radio" value="scalable">Резиновая</p>
                 </div>
-            </section>
-            
-            <section>
-                <p>СЕТКА:</p>
-                <p><input name="grid_type" type="radio" value="adaptive" checked>Адаптивная</p>
-                <p><input name="grid_type" type="radio" value="fixed">Фиксированная</p>
-                <p><input name="grid_type" type="radio" value="scalable">Резиновая</p>
-            </section>
-        
-            <section>
-                <p>ОСОБЕННОСТИ:</p>
-                <p><input name="features" type="checkbox" value="slider" checked>Слайдер</p>
-                <p><input name="features" type="checkbox" value="advantages">Блок преимуществ</p>
-                <p><input name="features" type="checkbox" value="news" checked>Новости</p>
-                <p><input name="features" type="checkbox" value="gallery">Галерея</p>
-                <p><input name="features" type="checkbox" value="cart">Корзина</p>
-            </section>
-        
-            <section>
-                <ul>
-                    <li>
-                        <div>Top div</div>
-                        <img src="img/img-sedona 1.jpg" alt="Sedona template" width="360" height="576">
-                        <div>                            
-                            <p>Sedona</p>
-                            <p>Site description</p>
-                            <button type="button">Site Price</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>Top div</div>
-                        <img src="img/img-pink 1.jpg" alt="Pink template" width="358" height="576">
-                        <div>
-                            <p>Pink</p>
-                            <p>Site description</p>
-                            <button type="button">Site Price</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>Top div</div>
-                        <img src="img/img-barbershop 1.jpg" alt="Borodinski template" width="358" height="576">
-                        <div>
-                            <p>Borodinski</p>
-                            <p>Site description</p>
-                            <button type="button">Site Price</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>Top div</div>
-                        <img src="img/img-mishka 1.jpg" alt="Mishka template" width="358" height="576">
-                        <div>
-                            <p>Mishka</p>
-                            <p>Site description</p>
-                            <button type="button">Site Price</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>Top div</div>
-                        <img src="img/img-aplus 1.jpg" alt="A+ template" width="358" height="576">
-                        <div>
-                            <p>A+</p>
-                            <p>Site description</p>
-                            <button type="button">Site Price</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>Top div</div>
-                        <img src="img/img-kvast 1.jpg" alt="KBACT template" width="358" height="576">
-                        <div>
-                            <p>KBACT</p>
-                            <p>Site description</p>
-                            <button type="button">Site Price</button>
-                        </div>
-                    </li>
-                </ul>
                 
-                <!-- Я не знаю как объявить форму, поэтому сделал странички ссылками, но мне кажется, тут нужно применять JavaScript-->
-                <!-- Еще, я осознаю, что при нажатии на 2, 3 или Следующая, 1 должна стать активной, а текущая страница - нет, плюс, на 2 и 3 должна появиться кнопка-->
-                <!-- Предыдущая, а на 3 странице, кнопка Следующая - пропасть, но как отобразить это в HTML я не знаю.-->
-                <a href=""><img src="img/page active.svg" alt="1" width="50" height="50"></a>
-                <a href=""><img src="img/page active copy 3.svg" alt="2" width="50" height="50"></a>
-                <a href=""><img src="img/page active copy 3.svg" alt="3" width="50" height="50"></a>
-                <a href=""><img src="img/grey btn.svg" alt="Следующая" width="260" height="50"></a>
+                <div>
+                    <p>ОСОБЕННОСТИ:</p>
+                    <p><input name="features" type="checkbox" value="slider" checked>Слайдер</p>
+                    <p><input name="features" type="checkbox" value="advantages">Блок преимуществ</p>
+                    <p><input name="features" type="checkbox" value="news" checked>Новости</p>
+                    <p><input name="features" type="checkbox" value="gallery">Галерея</p>
+                    <p><input name="features" type="checkbox" value="cart">Корзина</p>
+                </div>
+                
+                <!--Тут бы я вставил кнопку, которая применяет фильтр
+                <button></button>-->
+            </section>
+
+            <section>
+                <div>
+                    Сортировать:
+                    <ul>
+                        <li><a href="">По цене</a></li>
+                        <li><a href="">По типу</a></li>
+                        <li><a href="">По названию</a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><img src="img/filter_decrease.svg" alt="Фильтр по убыванию" width="11" height="10"></li>
+                        <li><img src="img/filter_increase.svg" alt="Фильтр по возрастанию" width="11" height="10"></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <ul>
+                        <li>
+                            <div>Top div</div>
+                            <img src="img/img-sedona_1.jpg" alt="Шаблон Sedona" width="360" height="576">
+                            <div>
+                                <p>Sedona</p>
+                                <p>Информационный сайт для туристов</p>
+                                <button><img src="img/add_to_cart_button.svg" alt="Добавить в корзину" width="200" height="50"></button>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div>Top div</div>
+                            <img src="img/img-pink_1.jpg" alt="Шаблон Pink" width="358" height="576">
+                            <div>
+                                <p>Pink App</p>
+                                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                                <button><img src="img/add_to_cart_button.svg" alt="Добавить в корзину" width="200" height="50"></button>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div>Top div</div>
+                            <img src="img/img-barbershop_1.jpg" alt="Шаблон Borodinski" width="358" height="576">
+                            <div>
+                                <p>Barbershop</p>
+                                <p>Сайт салона красоты. Для мужчин, да.</p>
+                                <button><img src="img/add_to_cart_button.svg" alt="Добавить в корзину" width="200" height="50"></button>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div>Top div</div>
+                            <img src="img src="img/img-mishka_1.jpg" alt="Шаблон Mishka" width="358" height="576">
+                            <div>
+                                <p>Mishka</p>
+                                <p>Интернет-магазин вязаных игрушек</p>
+                                <button><img src="img/add_to_cart_button.svg" alt="Добавить в корзину" width="200" height="50"></button>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div>Top div</div>
+                            <img src="img/img-aplus_1.jpg" alt="Шаблон A+" width="358" height="576">
+                            <div>
+                                <p>A plus</p>
+                                <p>Лендинг курсов повышения квалификации</p>
+                                <button><img src="img/add_to_cart_button.svg" alt="Добавить в корзину" width="200" height="50"></button>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div>Top div</div>
+                            <img src="img/img-kvast_1.jpg" alt="Шаблон KBACT" width="358" height="576">
+                            <div>
+                                <p>KBACT</p>
+                                <p>Промо-сайт производителя крафтового кваса</p>
+                                <button><img src="img/add_to_cart_button.svg" alt="Добавить в корзину" width="200" height="50"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <!--Да, принцип понял, но не совсем понял про реализацию - как в ссылках можно задавать разные классы айтемам списка-->
+                    <ul>
+                        <li class="nextpage"><a href="">Предыдущая</a></li>
+                        <li class="page_number current_page"><a href="">1</a></li>
+                        <li class="page_number"><a href="">2</a></li>
+                        <li class="page_number"><a href="">3</a></li>
+                        <li class="nextpage"><a href="">Следующая</a></li>
+                    </ul>
+                </div>
             </section>
         </main>
     
         <footer>
         
             <section>
-                <img src="img/map 1.png" alt="Map" width="100%" height="416"> <!-- 100 процентов, чтобы растянуть карту на всю ширину-->
+                <img src="img/map_1.png" alt="Карта проезда" width="100%" height="416"> <!-- 100 процентов, чтобы растянуть карту на всю ширину-->
                 <div>
                     <p>Nerds design studio</p>
                     <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     <p>тел. +7 (812) 275-75-75</p>
                     
-                    <a href=""><img src="img/btn.png" alt="Contact Us" width="219" height="50"></a>
+                    <a href=""><img src="img/btn.png" alt="Написать нам" width="219" height="50"></a>
                 </div>
                 
-                <a href=""><img src="img/map-marker 1.png" alt="Pin the marker" width="231" height="190"></a>
+                <a href=""><img src="img/map-marker_1.png" alt="Отметка на карте" width="231" height="190"></a>
             </section>
             
             <div>
                 <ul>
                     <li>
-                        <a href="#"><img src="img/vk-icon.svg" alt="VK link"></a>
+                        <a href="#"><img src="img/vk-icon.svg" alt="Мы в VK"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/fb-icon.svg" alt="Facebook link"></a>
+                        <a href="#"><img src="img/fb-icon.svg" alt="Мы в Facebook"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/insta-icon.svg" alt="Instagram link"></a>
+                        <a href="#"><img src="img/insta-icon.svg" alt="Мы в Instagram"></a>
                     </li>
                 </ul>
             </div>
