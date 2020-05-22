@@ -56,8 +56,7 @@
                     <p><input name="features" type="checkbox" value="cart">Корзина</p>
                 </div>
                 
-                <!--Тут бы я вставил кнопку, которая применяет фильтр
-                <button></button>-->
+                <button>Показать</button>
             </section>
 
             <section>
@@ -70,8 +69,8 @@
                     </ul>
                     
                     <ul>
-                        <li><img src="img/filter_decrease.svg" alt="Фильтр по убыванию" width="11" height="10"></li>
-                        <li><img src="img/filter_increase.svg" alt="Фильтр по возрастанию" width="11" height="10"></li>
+                        <li><!--Сделать треугольники стилями--></li>
+                        <li><!--Сделать треугольники стилями--></li>
                     </ul>
                 </div>
                 
@@ -79,74 +78,75 @@
                     <ul>
                         <li>
                             <div>Top div</div>
-                            <img src="img/img-sedona_1.jpg" alt="Шаблон Sedona" width="360" height="576">
+                            <img src="img/img-sedona.jpg" alt="Шаблон Sedona" width="360" height="576">
                             <div>
                                 <p>Sedona</p>
                                 <p>Информационный сайт для туристов</p>
-                                <button><img src="img/add_to_cart_button.svg" alt="Добавить в корзину" width="200" height="50"></button>
+                                <button><!--Кнопка будет сделана стилями--></button>
                             </div>
                         </li>
                         
                         <li>
                             <div>Top div</div>
-                            <img src="img/img-pink_1.jpg" alt="Шаблон Pink" width="358" height="576">
+                            <img src="img/img-pink.jpg" alt="Шаблон Pink" width="358" height="576">
                             <div>
                                 <p>Pink App</p>
                                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                                <button><img src="img/add_to_cart_button.svg" alt="Добавить в корзину" width="200" height="50"></button>
+                                <button><!--Кнопка будет сделана стилями--></button>
                             </div>
                         </li>
                         
                         <li>
                             <div>Top div</div>
-                            <img src="img/img-barbershop_1.jpg" alt="Шаблон Borodinski" width="358" height="576">
+                            <img src="img/img-barbershop.jpg" alt="Шаблон Borodinski" width="358" height="576">
                             <div>
                                 <p>Barbershop</p>
                                 <p>Сайт салона красоты. Для мужчин, да.</p>
-                                <button><img src="img/add_to_cart_button.svg" alt="Добавить в корзину" width="200" height="50"></button>
+                                <button><!--Кнопка будет сделана стилями--></button>
                             </div>
                         </li>
                         
                         <li>
                             <div>Top div</div>
-                            <img src="img src="img/img-mishka_1.jpg" alt="Шаблон Mishka" width="358" height="576">
+                            <img src="img src="img/img-mishka.jpg" alt="Шаблон Mishka" width="358" height="576">
                             <div>
                                 <p>Mishka</p>
                                 <p>Интернет-магазин вязаных игрушек</p>
-                                <button><img src="img/add_to_cart_button.svg" alt="Добавить в корзину" width="200" height="50"></button>
+                                <button><!--Кнопка будет сделана стилями--></button>
                             </div>
                         </li>
                         
                         <li>
                             <div>Top div</div>
-                            <img src="img/img-aplus_1.jpg" alt="Шаблон A+" width="358" height="576">
+                            <img src="img/img-aplus.jpg" alt="Шаблон A+" width="358" height="576">
                             <div>
                                 <p>A plus</p>
                                 <p>Лендинг курсов повышения квалификации</p>
-                                <button><img src="img/add_to_cart_button.svg" alt="Добавить в корзину" width="200" height="50"></button>
+                                <button><!--Кнопка будет сделана стилями--></button>
                             </div>
                         </li>
                         
                         <li>
                             <div>Top div</div>
-                            <img src="img/img-kvast_1.jpg" alt="Шаблон KBACT" width="358" height="576">
+                            <img src="img/img-kvast.jpg" alt="Шаблон KBACT" width="358" height="576">
                             <div>
                                 <p>KBACT</p>
                                 <p>Промо-сайт производителя крафтового кваса</p>
-                                <button><img src="img/add_to_cart_button.svg" alt="Добавить в корзину" width="200" height="50"></button>
+                                <button><!--Кнопка будет сделана стилями--></button>
                             </div>
                         </li>
                     </ul>
                 </div>
                 
                 <div>
-                    <!--Да, принцип понял, но не совсем понял про реализацию - как в ссылках можно задавать разные классы айтемам списка-->
+                    <!--Понял, то есть, например, у нас будет catalog-1.html, в котором класс pagination-item-current у первой ссылки-->
+                    <!--Но в catalog-2.html, мы его перебросим во вторую и отобразим <li class="pagination-item"><a href="">Предыдущая</a></li>, которая на первой странице отсутствует-->
                     <ul>
-                        <li class="nextpage"><a href="">Предыдущая</a></li>
-                        <li class="page_number current_page"><a href="">1</a></li>
-                        <li class="page_number"><a href="">2</a></li>
-                        <li class="page_number"><a href="">3</a></li>
-                        <li class="nextpage"><a href="">Следующая</a></li>
+                        <li class="pagination-item"><a href="">Предыдущая</a></li>
+                        <li class="pagination-item pagination-item-current"><a href="">1</a></li>
+                        <li class="pagination-item"><a href="">2</a></li>
+                        <li class="pagination-item"><a href="">3</a></li>
+                        <li class="pagination-item"><a href="">Следующая</a></li>
                     </ul>
                 </div>
             </section>
@@ -161,7 +161,7 @@
                     <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     <p>тел. +7 (812) 275-75-75</p>
                     
-                    <button><img src="img/add_to_cart_button.svg" alt="Напишите нам" width="219" height="50"></button>
+                    <button><!--Кнопку сделаем стилями--></button>
                 </div>
             </section>
             
