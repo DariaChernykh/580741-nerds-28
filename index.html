@@ -27,19 +27,19 @@
                 <div> <!--Первый слайдер + промо баннер-->
                     <h2>Долго, дорого, скрупулезно</h2>
                     <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-                    <a href="" aria-label="Перейти в хз куда <!--Я не знаю куда это можно форварднуть, в раздел О нас???-->">Узнать больше</a>
+                    <a href="" aria-label="Перейти в раздел 'О нас'">Узнать больше</a>
                     <!-- Сами картинки слайдера<img src="img/promo_slide_1.png" alt="Промо-баннер 1" width="760" height="431">-->
                 </div>
                 <div> <!--Второй слайдер + промо баннер-->
                     <h2>Любим математику как никто другой</h2>
                     <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-                    <a href="" aria-label="Перейти в хз куда <!--Я не знаю куда это можно форварднуть, в раздел О нас???-->">Узнать больше</a>
+                    <a href="" aria-label="Перейти в раздел 'О нас'">Узнать больше</a>
                     <!-- Сами картинки слайдера<img src="img/promo_slide_2.png" alt="Промо-баннер 2" width="760" height="431">-->
                 </div>
                 <div> <!--Третий слайдер + промо баннер-->
                     <h2>Только ночь, только хардкор</h2>
                     <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                    <a href="" aria-label="Перейти в хз куда <!--Я не знаю куда это можно форварднуть, в раздел О нас???-->">Узнать больше</a>
+                    <a href="" aria-label="Перейти в раздел 'О нас'">Узнать больше</a>
                     <!-- Сами картинки слайдера<img src="img/promo_slide_3.png" alt="Промо-баннер 3" width="760" height="431">-->
                 </div>
                 
@@ -54,7 +54,7 @@
                 <ul>
                     <li>
                         <img src="img/illustration-1.png" alt="Веб сайты" width="300" height="146">
-                        <h3>ВЕБ-САЙТЫ</h3>
+                        <h3 class="toUpperCase">Веб-сайты</h3>
                         <p>Мир никогда не будет прежним,
                         после того как увидит ваш сайт!</p>
                         <!--Но не уверен, может и кнопку можно сделать, которая будет добавлять продукт Веб-сайты в корзину-->
@@ -63,14 +63,14 @@
                     </li>
                     <li>
                         <img src="img/illustration-2.png" alt="Приложения" width="300" height="146">
-                        <h3>ПРИЛОЖЕНИЯ</h3>
+                        <h3 class="toUpperCase">Приложения</h3>
                         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
                         <!--Но не уверен, может и кнопку можно сделать, которая будет добавлять продукт Веб-сайты в корзину-->
                         <a href="catalog.html" aria-label="Перейти в каталог для заказа">Заказать</a>
                     </li>
                     <li>
                         <img src="img/illustration-3.png" alt="Презентации" width="300" height="146">
-                        <h3>ПРЕЗЕНТАЦИИ</h3>
+                        <h3 class="toUpperCase">Презентации</h3>
                         <p>Вы даже не подозреваете, наколько вы изумительны!</p>
                         <!--Но не уверен, может и кнопку можно сделать, которая будет добавлять продукт Веб-сайты в корзину-->
                         <a href="catalog.html" aria-label="Перейти в каталог для заказа">Заказать</a>
@@ -152,27 +152,34 @@
             </div>
         </footer>
         
-        <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
+        <section class="modal">
             <h2>Напишите нам</h2>
-            <!--Крестик закрытия формы Напишите нам, мы нарисуем его в CSS?????-->
-            <button type="button"></button>
-            <div>
-                <p>Ваше имя:</p>
-                <input type="text" placeholder="Имя Фамилия" name="clients_fullname" required>
-            </div>
-            
-            <div>
-                <p>Ваш e-mail:</p>
-                <input type="email" placeholder="email@example.com" name="clients_email" required>
-            </div>
-            
-            <div>
-                <p>Текст письма:</p>
-                <!--Тут еще можно при помощи textarea выполнить, мне кажется-->
-                <input type="text" placeholder="В свободной форме" name="clients_message">
-            </div>
-            <!--Кнопка отправки формы-->
-            <button type="submit" >Отправить</button>
-        </form>
+            <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
+                <!--Блэт, я открыл шаблон в Фигме, а там нету крестика вообще. Короч, без него тогда-->
+                <!--<button type="button"><span class="visually_hidden">Закрыть<span></button>-->
+                <div>
+                    <label>
+                        <p>Ваше имя:</p>
+                        <input type="text" id="fullname_id" placeholder="Имя Фамилия" name="clients_fullname" required>
+                    </label>
+                </div>
+                
+                <div>
+                    <label>
+                        <p>Ваш e-mail:</p>
+                        <input type="email" placeholder="email@example.com" name="clients_email" required>
+                    </label>
+                </div>
+                
+                <div>
+                    <label>
+                        <p>Текст письма:</p>
+                        <textarea placeholder="В свободной форме"></textarea>
+                    </label>
+                </div>
+                <!--Кнопка отправки формы-->
+                <button type="submit">Отправить</button>
+            </form>
+        </section>    
     </body>
 </html>
