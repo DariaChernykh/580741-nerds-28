@@ -1,3 +1,356 @@
+body {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    min-width: 1460px;
+    line-height: 24px;
+}
+
+.navigation {
+    background-color: var(--light_grey_color);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white_background);
+    background-color: var(--button_and_links_color);
+}
+
+fieldset {
+    border: none;
+}
+
+:root {
+    --light_grey_color: #EEEEEE;
+    --button_and_links_color: #FB565A;
+    --order_applications_link: #00CA74;
+    --order_presentations_link: #EFC849;
+    --white_background: #FFFFFF;
+    --catalog_items_top: 4D4D4D;
+    --black_color: #000000;
+    --text_color: #283136;
+    --contacts_color: #666666;
+    --placeholder_text_color: #444444;
+    --border_color: #DBDBDB;
+}
+
+.navigation a {
+    color: var(--black_color);
+    font-weight: 500;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+.navigation a:active {
+    /*Не уверен, что понимаю, как этот ректангл нарисовать внизу ссылки. Чтобы тебе понятнее было - это в Наве активная страница (Магазин) должна иметь снизу красное подчеркивание*/
+}
+
+.slider h2{
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.slider p {
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: var(--text_color);
+}
+
+.slider a {
+    /*width: 240px;
+    height: 50px;
+    left: 140px;
+    top: 415px; Эти параметры без Absolute не применяются, а с ними вся структура ломается, я хз, как по мне Паддингом слишком топорно получается, то же самое, что спускать текст на середину страницы при помощи миллиарда <br> - типо, результат есть, но какой ценой???*/
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 54px;
+    padding-right: 54px;
+    border-radius: 3px;
+}
+
+.slider input[type="radio"] {
+    
+}
+
+.catalog_header {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    color: var(--black_color);
+}
+
+.filter_title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--black_color);
+}
+
+.catalog_sort a {
+    font-size: 14px;
+    line-height: 18px;
+    background: none;
+    color: var(--black_color);
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+/*Не понимаю, как задать Active по-умолчанию*/
+.catalog_sort a:active {
+    font-size: 14px;
+    line-height: 18px;
+    background: none;
+    color: var(--black_color);
+    mix-blend-mode: normal;
+}
+
+.filter_price {
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--text_color);
+}
+
+.filter_text {
+    line-height: 19px;
+    color: var(--text_color);
+}
+
+.products h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: var(--black_color);
+}
+
+.products p {
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: var(--text_color);
+}
+
+.products a {
+    /*width: 160px;
+    height: 50px;
+    left: 140px;
+    top: 922px; Тот же самый комментарий с Absolute и Padding*/
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 39px;
+    padding-right: 40px;
+    border-radius: 3px;
+}
+
+.products .sites_product a {
+    background-color: var(--button_and_links_color);
+}
+
+.products .applications_product a {
+    background-color: var(--order_applications_link);
+}
+
+.products .presentations_product a {
+    background-color: var(--order_presentations_link);
+}
+
+.template_name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black_color);
+}
+
+.template_info {
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--contacts_color);
+}
+
+.catalog button {
+    width: 200px;
+    height: 50px;
+    background: var(--button_and_links_color);
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white_background);
+}
+
+
+/*Они задолбали, нахер, я хз почему они друг на друга заезжают!!!!*/
+.catalog_page a {
+    color: var(--black_color);
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--light_grey_color);
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.catalog_page.active a {      
+    border: 3px solid var(--border_color);
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: var(--white_background);
+}
+
+.next_page a {
+    color: var(--black_color);
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 78px;
+    padding-right: 77px;
+    background-color: var(--light_grey_color);
+    font-weight: 500;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+}
+
+.company .we_are {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    color: var(--black_color);
+}
+
+.company .our_vision {
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: var(--text_color);
+}
+
+.company .our_scope {
+    font-weight: bold;
+    line-height: 24px;
+    color: var(--text_color);
+    text-transform: uppercase;
+}
+
+.company li {
+    /*Тут я хз как вставить этот красный треугольник, вместо черного кружка. Может, играться с List-Style????*/
+    line-height: 24px;
+    color: color: var(--text_color);
+}
+
+.company .since {
+    font-weight: bold;
+    line-height: 24px;
+    color: var(--black_color);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.percentage {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+    color: var(--black_color);
+}
+
+.percentage .percent_icon {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 40px;
+    color: var(--black_color);
+}
+
+.conditions {
+    line-height: 18px;
+    /*display: flex;
+    align-items: center;
+    Display и Align-Items ломают отображение надписей ячейка под ячейкой и отображает тупо в один ряд все три строки*/
+    color: var(--text_color);
+}
+
+.partners a {
+    background: none;
+    /*opacity: 0.2; Если поставить Опасити 0,2, как в Фигме, то вообще почти не видно ссылки*/
+}
+
+.contacts .studio_name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--black_color);
+}
+
+.contacts p {
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: var(--contacts_color);
+}
+
+.contacts button {
+    width: 219px;
+    height: 50px;
+    background-color: var(--button_and_links_color);
+    border-radius: 3px;
+    color: var(--white_background);
+    text-transform: uppercase;
+}
+
+.catalog_filter button {
+    width: 260px;
+    height: 50px;
+    font-weight: 500;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    background-color: var(--light_grey_color);
+    border-radius: 3px;
+    color: var(--black_color);
+    text-transform: uppercase;
+}
+
+.social_links a {
+    background: none;
+}
+
 .visually_hidden {
     position: absolute;
     width: 1px;
@@ -9,6 +362,60 @@
     overflow: hidden;
 }
 
-.toUpperCase {
+.pop_up_windows {
+    display: none;
+}
+
+.pop_up_windows h2{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--black_color);
+}
+
+.pop_up_windows p{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--black_color);
+}
+
+.pop_up_windows input,
+.pop_up_windows textarea {
+    color: var(--placeholder_text_color);
+    line-height: 18px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    /*Не знаю, как именно на текст применить Опасити, думаю, если написать тут, то он тупо ко всей рамке применит его*/
+}
+
+.pop_up_windows button {
+    width: 259px;
+    height: 50px;
+    background-color: var(--button_and_links_color);
+    border-radius: 3px;
+    color: var(--white_background);
     text-transform: uppercase;
+}
+
+.be_friends {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--black_color);
+    display: flex;
+    align-items: center;
+}
+
+.discount {
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: var(--placeholder_text_color);
+}
+
+.social_links a {
+    width: 81px;
+    height: 81px;
+    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF; /*Че-т как-то по-бичевски выглядит, может тупо картинкой зафигачим???*/
 }

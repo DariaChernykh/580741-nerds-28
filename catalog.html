@@ -3,11 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Нёрдс - Наши Продукты</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="navigation">
                 <a href="index.html">
                 <img src="img/nerds-logo.svg" alt="Логотип дизайн-студии «Нёрдс»" width="160" height="65">
                 </a>
@@ -22,40 +24,39 @@
         </header>
     
         <main>
-            <h1>Магазин готовых шаблонов</h1>
+            <h1 class="catalog_header">Магазин готовых шаблонов</h1>
             
-            <section>
+            <section class="catalog_filter">
                 <form action="https://echo.htmlacademy.ru" method="get">
                 <!--Я бы тут попробовал поиграться с <input type="range" min="0" max="20000">, но там только на один ползунок настроено...-->
                     <fieldset>
-                        <legend class="toUpperCase">Стомость:</legend>
+                        <legend class="filter_title">Стомость:</legend>
                         <input type="range" min="0" max="20000"> <!--Просто, чтобы было...-->
                         
-                        <label>
+                        <label class="filter_price">
                             От
                             <input type="number" name="filter_min_price" placeholder="0" min="0" max="20000" step="1">
                         </label>
-                        <label>
+                        <label class="filter_price">
                             До
                             <input type="number" name="filter_max_price" placeholder="0" min="0" max="20000" step="1">
                         </label>
                     </fieldset>
 
                     <fieldset>
-                        <legend class="toUpperCase">Сетка:</legend>
-                        
-                        <label><input name="grid_type" type="radio" value="adaptive" checked>Адаптивная<br></label>
-                        <label><input name="grid_type" type="radio" value="fixed">Фиксированная</br></label>
-                        <label><input name="grid_type" type="radio" value="scalable">Резиновая</br></label>
+                        <legend class="filter_title">Сетка:</legend>
+                        <label class="filter_text"><input name="grid_type" type="radio" value="adaptive" checked>Адаптивная<br></label>
+                        <label class="filter_text"><input name="grid_type" type="radio" value="fixed">Фиксированная</br></label>
+                        <label class="filter_text"><input name="grid_type" type="radio" value="scalable">Резиновая</br></label>
                     </fieldset>
                     
                     <fieldset>
-                        <legend class="toUpperCase">Особенности:</legend>
-                        <label><input name="features" type="checkbox" value="slider" checked>Слайдер<br></label>
-                        <label><input name="features" type="checkbox" value="advantages">Блок преимуществ<br></label>
-                        <label><input name="features" type="checkbox" value="news" checked>Новости<br></label>
-                        <label><input name="features" type="checkbox" value="gallery">Галерея<br></label>
-                        <label><input name="features" type="checkbox" value="cart">Корзина<br></label>
+                        <legend class="filter_title">Особенности:</legend>
+                        <label class="filter_text"><input name="features" type="checkbox" value="slider" checked>Слайдер<br></label>
+                        <label class="filter_text"><input name="features" type="checkbox" value="advantages">Блок преимуществ<br></label>
+                        <label class="filter_text"><input name="features" type="checkbox" value="news" checked>Новости<br></label>
+                        <label class="filter_text"><input name="features" type="checkbox" value="gallery">Галерея<br></label>
+                        <label class="filter_text"><input name="features" type="checkbox" value="cart">Корзина<br></label>
                     </fieldset>
                     
                     <button type="submit">Показать</button>
@@ -63,8 +64,8 @@
             </section>
 
             <section>
-                <div>
-                    Сортировать:
+                <div class="catalog_sort">
+                    <span class="filter_title">Сортировать:</span>
                     <ul>
                         <li><a href=""  aria-label="Отсортировать по цене">По цене</a></li>
                         <li><a href="" aria-label="Отсортировать по типу">По типу</a></li>
@@ -77,69 +78,69 @@
                     </ul>
                 </div>
                 
-                <div>
+                <div class="catalog">
                     <ul>
                         <li>
-                            <div>Top div</div>
+                            <div class="top_div">Top div</div>
                             <img src="img/img-sedona.jpg" alt="Шаблон Sedona" width="360" height="576">
                             <div>
-                                <p>Sedona</p>
-                                <p>Информационный сайт для туристов</p>
+                                <p class="template_name">Sedona</p>
+                                <p class="template_info">Информационный сайт для туристов</p>
                                 <!--Не уверен, что именно делает кнопка - отправляет форму с добавлением данной позиции в Корзину???-->
                                 <button type="button">9 900 ₽<!--Магия, просто. Спасибо! По поводу Type - на лекции сказали что нужно тип указывать обязательно, чтобы не было недоразумений. Сделаю button, типо в корзину отлетает.--></button>
                             </div>
                         </li>
                         
                         <li>
-                            <div>Top div</div>
+                            <div class="top_div">Top div</div>
                             <img src="img/img-pink.jpg" alt="Шаблон Pink" width="358" height="576">
                             <div>
-                                <p>Pink App</p>
-                                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                                <p class="template_name">Pink App</p>
+                                <p class="template_info">Продуктовый лендинг приложения для iOS и Android</p>
                                 <!--Не уверен, что именно делает кнопка - отправляет форму с добавлением данной позиции в Корзину???-->
                                 <button type="button">9 900 ₽</button>
                             </div>
                         </li>
                         
                         <li>
-                            <div>Top div</div>
+                            <div class="top_div">Top div</div>
                             <img src="img/img-barbershop.jpg" alt="Шаблон Borodinski" width="358" height="576">
                             <div>
-                                <p>Barbershop</p>
-                                <p>Сайт салона красоты. Для мужчин, да.</p>
+                                <p class="template_name">Barbershop</p>
+                                <p class="template_info">Сайт салона красоты. Для мужчин, да.</p>
                                 <!--Не уверен, что именно делает кнопка - отправляет форму с добавлением данной позиции в Корзину???-->
                                 <button type="button">9 900 ₽</button>
                             </div>
                         </li>
                         
                         <li>
-                            <div>Top div</div>
+                            <div class="top_div">Top div</div>
                             <img src="img src="img/img-mishka.jpg" alt="Шаблон Mishka" width="358" height="576">
                             <div>
-                                <p>Mishka</p>
-                                <p>Интернет-магазин вязаных игрушек</p>
+                                <p class="template_name">Mishka</p>
+                                <p class="template_info">Интернет-магазин вязаных игрушек</p>
                                 <!--Не уверен, что именно делает кнопка - отправляет форму с добавлением данной позиции в Корзину???-->
                                 <button type="button">9 900 ₽</button>
                             </div>
                         </li>
                         
                         <li>
-                            <div>Top div</div>
+                            <div class="top_div">Top div</div>
                             <img src="img/img-aplus.jpg" alt="Шаблон A+" width="358" height="576">
                             <div>
-                                <p>A plus</p>
-                                <p>Лендинг курсов повышения квалификации</p>
+                                <p class="template_name">A plus</p>
+                                <p class="template_info">Лендинг курсов повышения квалификации</p>
                                 <!--Не уверен, что именно делает кнопка - отправляет форму с добавлением данной позиции в Корзину???-->
                                 <button type="button">9 900 ₽</button>
                             </div>
                         </li>
                         
                         <li>
-                            <div>Top div</div>
+                            <div class="top_div">Top div</div>
                             <img src="img/img-kvast.jpg" alt="Шаблон KBACT" width="358" height="576">
                             <div>
-                                <p>KBACT</p>
-                                <p>Промо-сайт производителя крафтового кваса</p>
+                                <p class="template_name">KBACT</p>
+                                <p class="template_info">Промо-сайт производителя крафтового кваса</p>
                                 <!--Не уверен, что именно делает кнопка - отправляет форму с добавлением данной позиции в Корзину???-->
                                 <button type="button">9 900 ₽</button>
                             </div>
@@ -147,15 +148,16 @@
                     </ul>
                 </div>
                 
-                <div>
+                <div class="catalog_navigation">
                     <!--Понял, то есть, например, у нас будет catalog-1.html, в котором класс pagination-item-current у первой ссылки-->
                     <!--Но в catalog-2.html, мы его перебросим во вторую и отобразим <li class="pagination-item"><a href="">Предыдущая</a></li>, которая на первой странице отсутствует-->
                     <ul>
-                        <li class="pagination-item"><a href="" aria-label="Перейти на предыдущую страницу">Предыдущая</a></li>
-                        <li class="pagination-item pagination-item-current"><a href="" aria-label="Перейти на первую страницу">1</a></li>
-                        <li class="pagination-item"><a href="" aria-label="Перейти на вторую страницу">2</a></li>
-                        <li class="pagination-item"><a href="" aria-label="Перейти на третью страницу">3</a></li>
-                        <li class="pagination-item"><a href="" aria-label="Перейти на следующую страницу">Следующая</a></li>
+                    <!--Пока не знаю как с Предыдущей поиграться, закомментил-->
+                        <!--<li class="previous_page"><a href="" aria-label="Перейти на предыдущую страницу">Предыдущая</a></li>-->
+                        <li class="catalog_page active"><a href="" aria-label="Перейти на первую страницу">1</a></li>
+                        <li class="catalog_page"><a href="" aria-label="Перейти на вторую страницу">2</a></li>
+                        <li class="catalog_page"><a href="" aria-label="Перейти на третью страницу">3</a></li>
+                        <li class="next_page"><a href="" aria-label="Перейти на следующую страницу">Следующая</a></li>
                     </ul>
                 </div>
             </section>
@@ -163,7 +165,7 @@
     
         <footer>
         
-            <section>
+            <section class="contacts">
                 <img src="img/map.png" alt="Карта проезда" width="100%" height="416"> <!-- 100 процентов, чтобы растянуть карту на всю ширину-->
                 <div>
                     <p>Nerds design studio</p>
@@ -175,7 +177,7 @@
                 </div>
             </section>
             
-            <div>
+            <div class="social_links">
                 <ul>
                     <li>
                         <a href="#"><img src="img/vk-icon.svg" alt="Ссылка на нашу компанию в VK"></a>
@@ -190,12 +192,12 @@
             </div>
       
             <div>
-                <p>Давайте дружить, это выгодно!</p>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
+                <p class="be_friends">Давайте дружить, это выгодно!</p>
+                <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
             </div>
         </footer>
         
-        <section class="modal">
+        <section class="pop_up_windows">
             <h2>Напишите нам</h2>
             <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
                 <!--Блэт, я открыл шаблон в Фигме, а там нету крестика вообще. Короч, без него тогда-->

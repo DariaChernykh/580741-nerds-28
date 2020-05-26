@@ -3,11 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Нёрдс</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="navigation">
                 <img src="img/nerds-logo.svg" alt="Логотип дизайн-студии «Нёрдс»" width="160" height="65">
                 <ul>
                     <li><a href="index.html">Студия</a></li>
@@ -22,21 +24,21 @@
         <main>
             <h1>Nerds</h1>
             
-            <section>
+            <section class="slider">
             <!--Надеюсь, я правильно понял твой посыл про Каждый слайдер в ДИВ-->
-                <div> <!--Первый слайдер + промо баннер-->
+                <div class="first_slider"> <!--Первый слайдер + промо баннер-->
                     <h2>Долго, дорого, скрупулезно</h2>
                     <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
                     <a href="" aria-label="Перейти в раздел 'О нас'">Узнать больше</a>
                     <!-- Сами картинки слайдера<img src="img/promo_slide_1.png" alt="Промо-баннер 1" width="760" height="431">-->
                 </div>
-                <div> <!--Второй слайдер + промо баннер-->
+                <div class="second_slider"> <!--Второй слайдер + промо баннер-->
                     <h2>Любим математику как никто другой</h2>
                     <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
                     <a href="" aria-label="Перейти в раздел 'О нас'">Узнать больше</a>
                     <!-- Сами картинки слайдера<img src="img/promo_slide_2.png" alt="Промо-баннер 2" width="760" height="431">-->
                 </div>
-                <div> <!--Третий слайдер + промо баннер-->
+                <div class="third_slider"> <!--Третий слайдер + промо баннер-->
                     <h2>Только ночь, только хардкор</h2>
                     <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                     <a href="" aria-label="Перейти в раздел 'О нас'">Узнать больше</a>
@@ -49,40 +51,40 @@
                 <p><input name="grid_type" type="radio"></p>
             </section>
             
-            <section>
+            <section class="products">
                 <h2 class="visually_hidden">Наши продукты</h2>
                 <ul>
-                    <li>
+                    <li class="sites_product">
                         <img src="img/illustration-1.png" alt="Веб сайты" width="300" height="146">
-                        <h3 class="toUpperCase">Веб-сайты</h3>
+                        <h3>Веб-сайты</h3>
                         <p>Мир никогда не будет прежним,
                         после того как увидит ваш сайт!</p>
                         <!--Но не уверен, может и кнопку можно сделать, которая будет добавлять продукт Веб-сайты в корзину-->
                         <!--В aria-label можно было бы разделить описание под каждый тип товара (сайт, приложение или презентация, но, так как ссылка одна на всех, я не стал понтить)-->
                         <a href="catalog.html" aria-label="Перейти в каталог для заказа">Заказать</a>
                     </li>
-                    <li>
+                    <li class="applications_product">
                         <img src="img/illustration-2.png" alt="Приложения" width="300" height="146">
-                        <h3 class="toUpperCase">Приложения</h3>
+                        <h3 class="to_upper_case">Приложения</h3>
                         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
                         <!--Но не уверен, может и кнопку можно сделать, которая будет добавлять продукт Веб-сайты в корзину-->
                         <a href="catalog.html" aria-label="Перейти в каталог для заказа">Заказать</a>
                     </li>
-                    <li>
+                    <li class="presentations_product">
                         <img src="img/illustration-3.png" alt="Презентации" width="300" height="146">
-                        <h3 class="toUpperCase">Презентации</h3>
-                        <p>Вы даже не подозреваете, наколько вы изумительны!</p>
+                        <h3 class="to_upper_case">Презентации</h3>
+                        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
                         <!--Но не уверен, может и кнопку можно сделать, которая будет добавлять продукт Веб-сайты в корзину-->
                         <a href="catalog.html" aria-label="Перейти в каталог для заказа">Заказать</a>
                     </li>
                 </ul>
             </section>
             
-            <section>
+            <section class="company">
                 <div>
-                    <p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-                    <p>Выполняем заказы на разработку:</p>
+                    <p class="we_are">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+                    <p class="our_vision">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                    <p class="our_scope">Выполняем заказы на разработку:</p>
                     <ul>
                         <li>Веб-сайтов любой сложности</li>
                         <li>Мобильных приложений для iOS и Android</li>
@@ -92,23 +94,23 @@
             
                 <div>
                     <img src="img/nerds-illustration.jpg" alt="Логотип дизайн-студии «Нёрдс»" width="360" height="208">
-                    <p>С 2004 года любим точность во всем:</p>
-                    <table>
+                    <p class="since">С 2004 года любим точность во всем:</p>
+                    <table class="our_perfomance">
                         <tr>
-                            <td>146<sup>%</sup></td>
-                            <td>100<sup>%</sup></td>
-                            <td>150<sup>%</sup></td>
+                            <td class="percentage">146<sup class="percent_icon">%</sup></td>
+                            <td class="percentage">100<sup class="percent_icon">%</sup></td>
+                            <td class="percentage">150<sup class="percent_icon">%</sup></td>
                         </tr>
                         <tr>
-                            <td>Уровень самоотдачи</td>
-                            <td>Соблюдение сроков</td>
-                            <td>Минимальная предоплата</td>
+                            <td class="conditions">Уровень самоотдачи</td>
+                            <td class="conditions">Соблюдение сроков</td>
+                            <td class="conditions">Минимальная предоплата</td>
                         </tr>
                     </table>
                 </div>
             </section>
             
-            <section>
+            <section class="partners">
                 <ul>
                     <li><a href="https://htmlacademy.ru"><img src="img/htmlacademy_logo.svg" alt="Лого и ссылка на сайт HTML Academy" width="199" height="68"></a></li>
                     <li><a href=""><img src="img/borodinski_logo.svg" alt="Лого и ссылка на сайт Borodinski" width="209" height="90"></a></li>
@@ -120,10 +122,10 @@
     
         <footer>
         
-            <section>
+            <section class="contacts">
                 <img src="img/map.png" alt="Карта проезда" width="100%" height="416"> <!-- 100 процентов, чтобы растянуть карту на всю ширину-->
                 <div>
-                    <p>Nerds design studio</p>
+                    <p class="studio_name">Nerds design studio</p>
                     <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     <p>тел. +7 (812) 275-75-75</p>
                     
@@ -132,7 +134,7 @@
                 </div>
             </section>
         
-            <div>
+            <div class="social_links">
                 <ul>
                     <li>
                         <a href="#"><img src="img/vk-icon.svg" alt="Ссылка на нашу компанию в VK"></a>
@@ -146,13 +148,13 @@
                 </ul>
             </div>
       
-            <div>
-                <p>Давайте дружить, это выгодно!</p>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
+            <div class="">
+                <p class="be_friends">Давайте дружить, это выгодно!</p>
+                <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
             </div>
         </footer>
         
-        <section class="modal">
+        <section class="pop_up_windows">
             <h2>Напишите нам</h2>
             <form action="https://echo.htmlacademy.ru" method="post" name="contact_us">
                 <!--Блэт, я открыл шаблон в Фигме, а там нету крестика вообще. Короч, без него тогда-->
